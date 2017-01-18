@@ -17,9 +17,8 @@ El proyecto incluye varios ejemplos del uso de Spring y otras tecnologías:
   - Servicio simple de ejemplo que devuelve una lista de objectos Person(clase utilizada como modelo) y ques
   es usado por un controlador para mostrar en una template una tabla simple con los datos.(ExampleService.java)
   
-  - He creado una entity que representa una tabla creada en MySQL (Course.java) para trabajar la persistencia. Para poder hacer uso
-  hay un repositorio JPA (CourseJpaRepository.java) que será el que relice las querys a la base de datos
-  y que será utilizado por un servicio (CourseServiceImpl.java) para poder listar, añadir, eliminar o modiificar la tabla Course
-  de nuestra base de datos. Con el controlador CourseController.java se enviará los datos devueltos por 
-  el servicio y se mostrará en la template courses.html con las notaciones de thymeleaf. 
-  
+  - He creado una entity que representa una tabla creada en MySQL (Course.java) para trabajar la persistencia. Para poder hacer uso hay un repositorio JPA (CourseJpaRepository.java) que será el que relice las querys a la base de datos
+  y que será utilizado por un servicio (CourseServiceImpl.java) para poder listar, añadir, eliminar o modificar la tabla Course de nuestra base de datos. Con el controlador CourseController.java se enviará los datos devueltos por 
+el servicio y se mostrará un listado de todos los cursos en la template courses.html con las notaciones de thymeleaf.
+Además en course.html hay un formulario con el que podremos añadir un registro a nuestra table Courses haciendo uso tambien
+del servicio, el controlador y el repositorio.
