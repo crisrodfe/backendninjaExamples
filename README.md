@@ -22,3 +22,5 @@ El proyecto incluye varios ejemplos del uso de Spring y otras tecnologías:
 el servicio y se mostrará un listado de todos los cursos en la template courses.html con las notaciones de thymeleaf.
 Además en course.html hay un formulario con el que podremos añadir un registro a nuestra table Courses haciendo uso tambien
 del servicio, el controlador y el repositorio.
+Además se ha añadido un converter(CourseConverter.java) para que el Controller no haga uso de una Entity(Course.java) sino solo de un modelo(CourseModel.java).
+
