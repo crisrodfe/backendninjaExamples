@@ -47,9 +47,4 @@ public class HelloWorldController
 		model.addAttribute("people",exampleService.getListPeople());
 		return HELLO_VIEW; //Nombre de la vista/template
 	}
-	
-	
-
-		
-
 }
